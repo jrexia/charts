@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link href="http://oj3eoe0eo.bkt.clouddn.com/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 chart-box">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 chat-list">
+                        <h1 class="chat-object">聊天室</h1>
+                        <div class="chat-txt" id="app">
+                            <div v-for="item in items">
+                                <template v-if="item.a">
+                                <p class="name ab">我</p>
+                                <p class="ab txt-color">{{item.text}}</p>
+                           </template>
+                                <template v-else>
+                                 <p class="name b">聊天机器人</p>
+                                 <p class="b txt-color">{{item}}</p>
+                          </template>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 txt-in">
+                        <textarea class="content"></textarea>
+                        <a href="###" class="btn-post">发送</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="http://oj3eoe0eo.bkt.clouddn.com/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
