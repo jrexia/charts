@@ -42,7 +42,7 @@ p {
     height: 435px;*/
     /*margin: 0px 10px;*/
     border-bottom: 1px solid #CCCCCC;
-    height: calc(100% - 100px);
+    height: calc(100% - 46px);
     /*transform: scale3d(1, 1, 1);*/
 }
 
@@ -154,6 +154,9 @@ p {
     .chart-box {
         height: 80%;
         width: 50%;
+    }
+    .chart-box .chat-list {
+        height: calc(100% - 100px);
     }
     .txt-in textarea {
         height: 100px;
